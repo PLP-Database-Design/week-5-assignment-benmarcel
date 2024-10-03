@@ -13,7 +13,7 @@ This demonstrates the cconnection of MySQL database and Node.js to create a simp
    ```
    npm init -y
    ```
-3. Install the necessary dependancies
+3. Install the necessary dependencies
    ```
    npm install express mysql2 dotenv nodemon
    ```
@@ -42,7 +42,7 @@ This demonstrates the cconnection of MySQL database and Node.js to create a simp
    // listen to the server
    const PORT = 3000
    app.listen(PORT, () => {
-     console.log(`server is runnig on http://localhost:${PORT}`)
+     console.log(`server is running on http://localhost:${PORT}`)
    })
    ```
 <br><br>

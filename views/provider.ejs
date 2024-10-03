@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Provider</title>
+</head>
+<body>
+    <h1>Providers</h1>
+    <% if(providers.length === 0){%>
+        <p>no provider found</p>
+        <%} else {%>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>provider_specialty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% providers.forEach(provider => { %>
+                <tr>
+                    <td><%= provider.first_name %></td>
+                    <td><%= provider.last_name %></td>
+                    <td><%= provider.provider_specialty %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <% }; %>
+</body>
+</html>
